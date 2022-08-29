@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "npm run build:release",
+    "build:Release": "webpack --mode production --env production --env configuration=Release",
+    "build:Debug": "webpack --mode development --env configuration=Debug",
+    "watch": "webpack --watch --mode development --env configuration=Debug"
+  },
+  "devDependencies": {
+    "css-loader": "^6.5.1",
+    "postcss-loader": "^7.0.0",
+    "postcss": "^8.3.11",
+    "postcss-preset-env": "^7.3.1",
+    "sass": "^1.43.4",
+    "sass-loader": "^13.0.0",
+    "ts-loader": "^9.3.1",
+    "typescript": "^4.7.4",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "compression-webpack-plugin": "^10.0.0",
+    "mini-css-extract-plugin": "^2.4.4",
+    "yarn-audit-fix": "^9.0.10"
+  }
+}
